@@ -38,3 +38,70 @@ function iniciarSesion(){
     }
 }
 
+function menuInicial() {
+    alert("Bienvenido a tu control de notas de confianza");
+    try {
+        let opcion = Number(prompt(
+            `Elige una opción: 
+             1. Iniciar sesión 
+             2. Registrarse 
+             3. salir`));
+
+        if (isNaN(opcion)) {
+            throw new Error("El valor ingresado no es un número.\nMera torta, Inténtalo de nuevo.");
+        }
+
+        switch(opcion) {
+            case 1:
+                alert("Opción 1: Iniciar sesión");
+                iniciarSesion()
+                break;
+            case 2:
+                alert("Opción 2: Registrarse");
+                resgristro()
+                break;
+            case 3:
+                alert("Vuelva pronto")
+                break;
+            default:
+                alert("Opción no válida. Inténtalo de nuevo.");
+                menuInicial(); 
+                break;
+        }
+    } catch (error) {
+        alert(error.message);
+        menuInicial(); 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('openPromptButton').addEventListener('click', function() {
+    menuInicial();
+});
