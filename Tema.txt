@@ -1,0 +1,62 @@
+1. Objetivo:
+
+a. Desarrollar una aplicación web utilizando JavaScript donde se implemente
+    conceptos de ciclos, condiciones, funciones y generalidades de JavaScript
+b. Desarrollar la aplicación haciendo uso de la consola de JavaScript acorde al
+    tema que le toca a cada uno
+
+2. Consideraciones:
+
+a. El trabajo es individual
+b. Enviar la solución por medio de un repositorio de git por el formulario que
+    les adjunto en este documento: https://forms.office.com/r/KiP9WBiYTG
+c. Plazo máximo de envío sábado 18 de mayo a las 11:59 pm
+
+Tema:
+
+                                        Notas
+
+Una institución educativa desea llevar el control de notas de todos los estudiantes que
+están dentro de la institución
+
+Razón por la cual lo llama para que le diseñe y le dé solución teniendo en cuenta:
+
+• La primera nota equivale al 20% de la materia
+• La segunda nota equivale al 30% de la materia
+• La tercera nota equivale al 50% de la materia
+• Ninguna nota puede exceder el valor de 5
+• Ninguna nota puede estar por debajo de 1
+
+Se debe ejecutar el ejercicio, y solo se finalizará si el usuario le da la opción de salir
+Es necesario calcular la nota definitiva para cada estudiante, así mismo mostrar cuantos
+estudiantes ganaron la materia, teniendo en cuenta que se gana si la nota es superior a 3.5
+
+________________________________________________________________________________________________________________
+
+            Que necesitamos?
+
+
+•registro para inscribir estudiantes
+•Lista de estudiantes que se pueda actulizar donde esten rigistrado los estudiantes
+•un inicio de sesion para los estudiantes registrados
+•menus 
+    menu 1: con registro/inicio de sesion/salir
+    menu 2: ingresar notas/ver definitiva/salir
+    menu 3: ingresar materia/ingresar nota 1/2/3
+    motrar: nombre del estudiante/marteria/notas 1-2-3/definitiva gana-pierde
+•proceso de porcentajes de notas
+•validacion para que no se pase de 5 y no baje de 1
+•sumatoria de de definitiva
+•una variable que guarde el resultado inicial y se actulice cada se inicie sesion 
+  (con el fin de que en el menu dos se oueda volver a ver la definitiva)
+
+
+            añadiduras 
+
+Interfaz grafica en la pagina
+
+
+
+
+
+
