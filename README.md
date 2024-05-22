@@ -41,8 +41,6 @@
   - `notasDefinitiva`: Es donde se realizan los procedimientos y la logica del proyecto.
   - `Tema`: En este archivo se puede encontrar el requerimiento y unas notas iniciales de como resolver el problema.
 
-###
 
-<img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/snake.svg" alt="Snake animation" />
 
-###
+
