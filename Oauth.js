@@ -1,25 +1,29 @@
 import {menuInicial,menuPrincipal} from './menus.js';
+import {notasEstudiantes} from './NotasDefinitiva.js';
 
 
-let usuarios = [
+export let usuarios = [
     {
     nombre: "Teo",
-    contrasena : "123"
+    contrasena : "123",
+    
     },
 ]
 
 export function resgristro(){
     let nombre = prompt("Ingresa el nombre de usuario:");
     let contrasena = prompt("Ingresa la contraseña:");
+    
 
     let nuevoUsuario ={
         nombre: nombre,
-        contrasena: contrasena
+        contrasena: contrasena,
     };
 
     usuarios.push
     (nuevoUsuario)
     menuInicial()
+    notasEstudiantes()
 }
 
 export function verificacionRegistro(nombre, contrasena){
@@ -30,6 +34,7 @@ export function verificacionRegistro(nombre, contrasena){
     }return false;
 }
 
+
 export function iniciarSesion(){
     let usuario = prompt("Ingresa tu nombre de usuario: ")
     let contrasena = prompt("Ingresa tu contraseña: ")
@@ -37,11 +42,13 @@ export function iniciarSesion(){
     if (verificacionRegistro(usuario, contrasena)){
         alert("Incio de sesion exitoso");
         menuPrincipal()
+        
     }else{
         alert("Revise su usuario o contraseña. \n vuelva a intentar")
         menuInicial()
+        
     }
-}
+}  
 
 
 
@@ -66,11 +73,3 @@ export function iniciarSesion(){
 
 
 
-
-
-
-
-
-document.getElementById('openPromptButton').addEventListener('click', function() {
-    menuInicial();
-});

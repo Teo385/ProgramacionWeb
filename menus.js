@@ -1,4 +1,5 @@
 import {resgristro,iniciarSesion} from './Oauth.js'
+import {ingresarNotas,notasEstudiantes,ganaron} from './NotasDefinitiva.js';
 
 
 export function menuInicial() {
@@ -42,8 +43,7 @@ export function menuPrincipal() {
             `Elige una opción: 
              1. Ingresar notas 
              2. ver definitiva
-             3. Mostar cuantos 
-                estudiantes ganaron
+             3. Mostar cuantos estudiantes ganaron
              4. volver al menu de inicio
              5. salir`));
 
@@ -53,15 +53,13 @@ export function menuPrincipal() {
 
         switch(opcion) {
             case 1:
-                alert("Opción 1: ");
-                
+                ingresarNotas()
                 break;
             case 2:
-                alert("Opción 2: ");
-               
+                notasEstudiantes()
                 break;
             case 3:
-                alert("opcion 3")
+                ganaron()
                 break;
             case 4:
                 menuInicial()
@@ -71,12 +69,12 @@ export function menuPrincipal() {
                 break;
             default:
                 alert("Opción no válida. Inténtalo de nuevo.");
-                menuInicial(); 
+                menuPrincipal(); 
                 break;
         }
     } catch (error) {
         alert(error.message);
-        menuInicial(); 
+        menuPrincipal(); 
     }
 }
 
