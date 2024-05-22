@@ -1,10 +1,7 @@
 import { menuInicial, menuPrincipal } from "./menus.js";
 
 export let usuarios = [
-  {
-    nombre: "Teo",
-    contrasena: "123",
-  },
+  
 ];
 
 export function registro() {
