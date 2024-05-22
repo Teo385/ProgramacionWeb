@@ -41,9 +41,6 @@
   - `notasDefinitiva`: Es donde se realizan los procedimientos y la logica del proyecto.
   - `Tema`: En este archivo se puede encontrar el requerimiento y unas notas iniciales de como resolver el problema.
 
-###
 
-<br clear="both">
 
-<img src="https://grantjenks.com/docs/freegames/snake.html" alt="Snake animation" />
 
